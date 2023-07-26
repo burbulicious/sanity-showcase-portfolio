@@ -19,7 +19,7 @@ export default async function Home() {
                 or just let it slip?
             </p>
             <h2 className="mt-24 text-3xl font-bold text-grey-700">
-                My mom's spaghetti projects
+                My mom&apos;s spaghetti projects
             </h2>
             <div className="mt-5 grid md:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-8">
                 {projects.map((project) => (
