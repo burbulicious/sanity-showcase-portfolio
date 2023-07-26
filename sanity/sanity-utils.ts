@@ -1,5 +1,6 @@
 import { Project } from "@/types/Project";
 import { Page } from "@/types/Page";
+import { HomePage } from "@/types/HomePage";
 import { createClient, groq } from "next-sanity";
 import clientConfig from "./config/client-config";
 
@@ -24,6 +25,7 @@ export async function getProject(slug: string): Promise<Project> {
             name,
             "slug" : slug.current,
             "image" : image.asset->url,
+            buttonText,
             url,
             content
         }`,
@@ -50,5 +52,17 @@ export async function getPage(slug: string): Promise<Page> {
             content
         }`,
         { slug }
+    );
+}
+export async function getHomePage(): Promise<HomePage> {
+    return createClient(clientConfig).fetch(
+        groq`*[_type == "homePage" ][0]{
+            _id,
+            _createdAt,
+            title,
+            callOutWord,
+            description,
+            projectsTitle,
+        }`
     );
 }

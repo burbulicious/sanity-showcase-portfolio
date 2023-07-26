@@ -11,7 +11,9 @@ export default async function Page({ params }: Props) {
     return (
         <div>
             <div>
-                <h1>{page.title}</h1>
+                <h1 className="text-black text-3xl lg:text-5xl font-extrabold leading-small">
+                    {page.title}
+                </h1>
             </div>
             <div className="text-lg text-gray-700 mt-5">
                 <PortableText value={page.content} />

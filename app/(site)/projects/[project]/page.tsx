@@ -13,23 +13,24 @@ export default async function Project({ params }: Props) {
 
     return (
         <div className="">
-            <header className="flex justify-between items-center">
-                <h1 className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent text-5xl font-extrabold leading-normal">
-                    {project.name}
-                </h1>
+            <h1 className="text-black text-3xl lg:text-5xl font-extrabold leading-small">
+                {project.name}
+            </h1>
+            <div className="text-lg text-gray-700 mt-5 block">
+                <PortableText value={project.content} />
+            </div>
+            {project.buttonText && (
                 <a
                     href={project.url}
                     title="View project"
                     target="_blank"
                     rel="noopener noreferrer "
-                    className="bg-gray-100 rounded-lg text-gray-500 font-bold py-3 px-4 whitespace-nowrap hover:bg-pink-500 hover:text-pink-100 transition-all"
+                    className="bg-pink-500 rounded-lg text-white font-bold py-3 px-4 whitespace-nowrap hover:bg-pink-700  transition-all flex w-fit mt-8"
                 >
-                    View project
+                    {project.buttonText}
                 </a>
-            </header>
-            <div className="text-lg text-gray-700 mt-5">
-                <PortableText value={project.content} />
-            </div>
+            )}
+
             <Image
                 src={project.image}
                 alt={project.name}

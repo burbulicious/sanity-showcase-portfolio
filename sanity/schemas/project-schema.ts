@@ -22,6 +22,11 @@ const project = {
             fields: [{ name: "alt", title: "Alt text", type: "string" }],
         },
         {
+            name: "buttonText",
+            title: "Button text",
+            type: "string",
+        },
+        {
             name: "url",
             title: "URL",
             type: "url",
