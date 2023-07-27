@@ -20,11 +20,11 @@ export default async function RootLayout({
 
     return (
         <html lang="en">
-            <body className="max-w-5xl mx-auto py-10 px-4">
+            <body className="max-w-7xl mx-auto py-10 px-4">
                 <header className="flex items-center justify-between ">
                     <Link
                         href="/"
-                        className="text-lg font-bold bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent hover:from-purple-600 hover:to-orange-400 transition-all"
+                        className="text-xl font-bold bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent hover:from-purple-600 hover:to-orange-400 transition-all"
                     >
                         SLMSHDy
                     </Link>
@@ -33,7 +33,7 @@ export default async function RootLayout({
                             <Link
                                 key={page._id}
                                 href={`/${page.slug}`}
-                                className="text-lg text-black hover:text-pink-500 transition-all"
+                                className="text-lg text-light uppercase text-gray-700 hover:text-pink-500 transition-all"
                             >
                                 {page.title}
                             </Link>

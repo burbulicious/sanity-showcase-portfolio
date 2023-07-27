@@ -13,6 +13,7 @@ export default async function Project({ params }: Props) {
 
     return (
         <div className="">
+            <div className="w-full h-[500px]"></div>
             <h1 className="text-black text-3xl lg:text-5xl font-extrabold leading-small">
                 {project.name}
             </h1>
