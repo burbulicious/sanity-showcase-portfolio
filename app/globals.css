@@ -7,3 +7,16 @@
 body {
     font-family: "Poppins", sans-serif;
 }
+
+h3 {
+    font-size: 1.6rem;
+    line-height: 1;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+ul {
+    padding-left: 2rem;
+}
+li {
+    list-style: disc;
+}

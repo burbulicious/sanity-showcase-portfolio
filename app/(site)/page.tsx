@@ -29,7 +29,7 @@ export default async function Home() {
                 </p>
             </div>
 
-            <div className="w-full rounded-xl bg-gradient-to-br from-orange-400 via-red-500 to-purple-600 px-6 md:px-12 py-12 md:py-20">
+            <div className="w-full rounded-xl bg-gradient-to-br from-orange-400 via-red-500 to-purple-600 px-6 md:px-12 py-12 md:py-20 lg:max-w-full md:max-w-3xl max-w-lg mx-auto">
                 <h2 className=" pb-8 text-4xl font-light text-white text-center uppercase">
                     {homePage.projectsTitle}
                 </h2>

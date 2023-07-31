@@ -27,6 +27,10 @@ export async function getProject(slug: string): Promise<Project> {
             "image" : image.asset->url,
             buttonText,
             url,
+            time,
+            servesFor,
+            calories,
+            price,
             content
         }`,
         { slug }

@@ -8,5 +8,9 @@ export type Project = {
     image: string;
     buttonText: string;
     url: string;
+    time: string;
+    servesFor: string;
+    calories: string;
+    price: string;
     content: PortableTextBlock[];
 };
